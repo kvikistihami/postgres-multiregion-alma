@@ -13,7 +13,7 @@ baseUrl: https://raw.githubusercontent.com/jelastic-jps/postgres-multiregion/mas
 onBeforeInit: scripts/onBeforeInit.js
 
 globals:
-  multiregional_utils: https://github.com/jelastic-jps/common/blob/main/multiregional-cluster-utils
+  multiregional_utils: https://github.com/kvikistihami/common/blob/main/multiregional-cluster-utils
   cluster_app: postgres
   password: ${fn.password(10)}
   pgpool2Regions: ""
@@ -80,8 +80,8 @@ settings:
               required: true
 
 mixins:
-  - https://github.com/jelastic-jps/common/blob/main/multiregional-cluster-utils/multiregion-globals-common.yml
-  - https://github.com/jelastic-jps/common/blob/main/multiregional-cluster-utils/multiregion-db-common.yml
+  - https://github.com/kvikistihami/common/blob/main/multiregional-cluster-utils/multiregion-globals-common.yml
+  - https://github.com/kvikistihami/common/blob/main/multiregional-cluster-utils/multiregion-db-common.yml
 
 actions:
   createPgpool2Envs:
