@@ -14,6 +14,7 @@ nodes:
   scalingMode: STATELESS
   nodeType: ${settings.nodeType}
   nodeGroup: sqldb
+  tag: 15.3-almalinux-9
   cluster: false
   skipNodeEmails: true
 
